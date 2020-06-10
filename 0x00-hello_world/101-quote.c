@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * main - writes text 
+ * main - writes text to stdout
  * description: using write to stdout message error
  * Return: 1
 */
