@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /**
- * main - writes text to stdout
+ * main - writes text 
  * description: using write to stdout message error
- * Return: returns 1
+ * Return: 1
 */
 int main(void)
 {
