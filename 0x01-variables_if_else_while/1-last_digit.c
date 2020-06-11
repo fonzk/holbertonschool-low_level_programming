@@ -4,7 +4,7 @@
 
 /**
  * main - use if
- * Description: uses if to know,is positive,zero or negative
+ * Description: know the last digit
  * Return: 0
  */
 int main(void)
