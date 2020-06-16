@@ -14,7 +14,7 @@ if (num <= 0 || num <= 98)
 {
 for (; num < 98; num++)
 {
- printf("%i, ", num);
+printf("%i, ", num);
 }
 printf("%i\n", 98);
 }
@@ -22,7 +22,7 @@ else
 {
 for (; num > 98; num--)
 {
- printf("%i, ", num);
+printf("%i, ", num);
 }
 }
 }
