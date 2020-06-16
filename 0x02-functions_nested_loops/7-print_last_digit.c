@@ -1,15 +1,19 @@
 #include "holberton.h"
 
 /**
- * _abs - Returns absolute value of number
+ * print_last_digit - return last number
  *
- * @n: int to get absolute value of
- * Return: Returns absolute value.
+ * @n: int to put number and find the last numert
+ * Return: Number.
  */
 int print_last_digit(int n)
 {
-	if (n <= 0)
-		return (-1 * (n));
-	else
-		return (n);
+int Number, Ldigit;
+if (n < 0)
+Number = -1 * n;
+else
+Number = n;
+Ldigit	= Number % 10;
+_putchar('0' + Ldigit);
+return (Ldigit);
 }
