@@ -8,20 +8,21 @@
  */
 void print_to_98(int n)
 {
+int a, b;
 int m = n;
 if (m <= 0 || m <= 98)
 {
-for (; m < 98; m++)
+for (a = n; a < 98; a++)
 {
-printf("%i, ", m);
+printf("%i, ", a);
 }
 printf("%i\n", 98);
 }
 else
 {
-for (; m > 98; m--)
+for (b = n; b > 98; b--)
 {
-printf("%i, ", m);
+printf("%i, ", b);
 }
 }
 }
