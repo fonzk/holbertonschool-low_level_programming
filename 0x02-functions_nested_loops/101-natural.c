@@ -13,11 +13,10 @@ int main(void)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
-		printf("%i\n", i);
 			suma += i;
 		}
 	}
-		printf("total%i\n", suma);
+		printf("%d\n", suma);
 
 			return (0);
 }
