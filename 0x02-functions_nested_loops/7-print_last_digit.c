@@ -21,8 +21,8 @@ int _abs(int n)
 int print_last_digit(int n)
 {
 int lit;
-n =_abs(n);
-lit	= n % 10;
-_putchar('0' + lit);
+lit = _abs(n);
+lit	%= 10;
+_putchar(lit + '0');
 return (lit);
 }
