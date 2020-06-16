@@ -3,7 +3,7 @@
 /**
  * jack_bauer - print minute
  *
- * descripcion: 24h minute by minute
+ * 
  * Return: none
  */
 void jack_bauer(void)
