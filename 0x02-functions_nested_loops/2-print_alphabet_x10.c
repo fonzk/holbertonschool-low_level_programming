@@ -9,8 +9,9 @@ void print_alphabet_x10(void)
 for (int i = 0; i <= 9 ; i++)
 {
 for (int letter = 97 ; letter <= 122 ; letter++)
+{
 _putchar(letter);
+}
 _putchar('\n');
 }
-return;
 }
