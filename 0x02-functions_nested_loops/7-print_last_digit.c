@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * _abs - returns absolute value of parameter
  *
@@ -8,10 +9,11 @@
 int _abs(int n)
 {
 	if (n <= 0)
-	return (n - (n * 2));
+		return (n - (n * 2));
 	else
-	return (n);
+		return (n);
 }
+
 /**
  * print_last_digit - prints the last digit of inputted number
  *
@@ -20,10 +22,10 @@ int _abs(int n)
  */
 int print_last_digit(int n)
 {
-int lit;
+	int last;
 
-lit = _abs(n);
-lit	%= 10;
-_putchar(lit + '0');
-return (lit);
+	last = _abs(n);
+	last %= 10;
+	_putchar(last + '0');
+	return (last);
 }
