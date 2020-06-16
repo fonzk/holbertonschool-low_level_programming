@@ -8,13 +8,11 @@
  */
 int print_last_digit(int n)
 {
-int number, ldigit, p;
-if (n < 0)
-number = (-1 * n);
-else
-number = n;
-ldigit	= number % 10;
-p = '0' + ldigit;
+int l, p;
+l = n % 10;
+if (l < 0)
+l = -l;
+p = '0' + l;
 _putchar(p);
-return (ldigit);
+return (l);
 }
