@@ -2,4 +2,5 @@ _putchar.c
 *.out
 0-main.c
 0-isuper
-
+1-main.c
+1-isdigit
