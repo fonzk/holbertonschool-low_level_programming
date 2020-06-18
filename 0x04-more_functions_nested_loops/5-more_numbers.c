@@ -8,11 +8,11 @@
 
 void more_numbers(void)
 {
-	int h, t;
+	int h, t, i, j;
 
-	for (int i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 15; j++)
+		for (j = 0; j < 15; j++)
 		{
 			if (j < 10)
 			{
