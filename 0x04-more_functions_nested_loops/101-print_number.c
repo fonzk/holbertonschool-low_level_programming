@@ -45,8 +45,8 @@ void print_number(int n)
 	{
 		if ((temp / mypow(10, i)) < 1)
 			break;
-		i++;
-		digits++;
+		i++; //2 3
+		digits++; //1 2 
 	}
 
 	num = temp / mypow(10, digits);
