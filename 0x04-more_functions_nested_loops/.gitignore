@@ -1,6 +1,8 @@
 _putchar.c
 *.out
 0-main.c
+0-isuper
+
 1-main.c
 holberton.h.gch
 1-alphabet
