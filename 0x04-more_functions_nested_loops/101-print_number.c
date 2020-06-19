@@ -51,6 +51,8 @@ unsigned	int digits, stop, i, num, temp;
 			break;
 		i++;
 		digits++;
+		if (digits>=9)
+    stop=1;
 	}
 
 	num = temp / mypow(10, digits);
