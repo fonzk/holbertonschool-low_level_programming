@@ -8,9 +8,9 @@
  * @exponent: exponent, number of times to multiply base by itself
  * Return: returns zero
  */
-long mypow(long base, long exponent)
+int mypow(int base, int exponent)
 {
-	long val = 1;
+	int val = 1;
 
 	while (exponent > 0)
 	{
@@ -29,7 +29,7 @@ long mypow(long base, long exponent)
  */
 void print_number(int n)
 {
-	long digits, stop, i, num, temp;
+	int digits, stop, i, num, temp;
 
 	i = 1;
 	digits = 0;
