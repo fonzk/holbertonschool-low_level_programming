@@ -47,7 +47,7 @@ unsigned	int digits, stop, i, num, temp;
 
 	while (stop == 0)
 	{
-		if ((temp / mypow(10, i)) < 1)
+		if ((temp / mypow(10, i)) < 2)
 			break;
 		i++;
 		digits++;
