@@ -43,7 +43,7 @@ void print_number(int n)
 	while (stop == 0)
 	{
 		if ((temp / mypow(10, i)) < 1)
-			break;
+			stop = 1;
 		i++;
 		digits++;
 	}
