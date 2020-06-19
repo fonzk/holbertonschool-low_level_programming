@@ -29,7 +29,7 @@ int mypow(int base, int exponent)
  */
 void print_number(int n)
 {
-unsigned	int digits, stop, i, num, temp;
+	unsigned int digits, stop, i, num, temp;
 
 	i = 1;
 	digits = 0;
@@ -51,8 +51,8 @@ unsigned	int digits, stop, i, num, temp;
 			break;
 		i++;
 		digits++;
-		if (digits>=9)
-    stop=1;
+		if (digits >= 9)
+			stop = 1;
 	}
 
 	num = temp / mypow(10, digits);
