@@ -29,16 +29,16 @@ int mypow(int base, int exponent)
  */
 void print_number(int n)
 {
-	int digits, stop, i, num, temp;
+	unsigned int digits, stop, i, num, temp;
 
 	i = 1;
 	digits = 0;
 	stop = 0;
 	temp = n;
-	if (temp < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		temp = (temp - (temp * 2));
+		temp = (n * -1);
 	}
 	while (stop == 0)
 	{
