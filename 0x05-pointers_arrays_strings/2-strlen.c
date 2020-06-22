@@ -10,7 +10,7 @@
 
 int _strlen(char *s)
 {
-int i; /* counter*/
+int i = 0; /* counter*/
 char nully = '\0'; /* this is the last char as null*/
 while (s[i] != nully)
 i++;
