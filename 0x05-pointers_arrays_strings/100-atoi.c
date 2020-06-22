@@ -17,10 +17,10 @@ int _atoi(char *s)
 	int neg = -1;
 	int rvalue = 0;
 
-	for (;s[count] != '\0' && (s[count] < '0' || s[count] > '9');count++)
+	for (; s[count] != '\0' && (s[count] < '0' || s[count] > '9'); count++)
 		if (s[count] == '-')
 			neg *= -1;
-		for (;s[count] != '\0' && (s[count] >= '0' && s[count] <= '9');count++)
-rvalue = (rvalue * 10) - (s[count] - '0');
+		for (; s[count] != '\0' && (s[count] >= '0' && s[count] <= '9'); count++)
+			rvalue = (rvalue * 10) - (s[count] - '0');
 	return  (rvalue * neg);
 }
