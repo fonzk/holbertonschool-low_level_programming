@@ -10,24 +10,22 @@
 
 void rev_string(char *s)
 {
-int i = 0; /* counter*/
+	int i = 0;
 
+	char nully = '\0';
 
-
-char nully = '\0'; /* this is the last char as null*/
-while (s[i] != nully)
+	while (s[i] != nully)
 	i++;
-int z = i - 1;
-i = 0;
-char a, ze;
+	int z = i - 1;
 
-for (; z > i; z--)
-{
-	a = s[i];
+	i = 0;
+	char a, ze;
+
+	for (; z > i; z--)
+	{
+		a = s[i];
 		ze = s[z];
 		s[i++] = ze;
 		s[z] = a;
-
-}
-
+	}
 }
