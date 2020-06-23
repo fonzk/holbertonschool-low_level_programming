@@ -14,8 +14,8 @@ void rev_string(char *s)
 
 	/*char nully = '\0';*/
 
-	while (s[i])
-	i++;
+	while (*(s + i))
+		i++;
 	int z = i - 1;
 
 	i = 0;
@@ -23,9 +23,9 @@ void rev_string(char *s)
 
 	for (; z > i; z--)
 	{
-		a = s[i];
-		ze = s[z];
-		s[i++] = ze;
-		s[z] = a;
+		a = *(s + i);
+		ze = *(s + z);
+		*(s + i++) = ze;
+		*(s + z) = a;
 	}
 }
