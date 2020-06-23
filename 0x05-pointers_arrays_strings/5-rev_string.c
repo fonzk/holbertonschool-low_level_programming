@@ -5,7 +5,7 @@
  * @s: a variable string as referencia
 	*
  * followed by a new line.
-	* Return: none.
+	* Return: void
  */
 
 void rev_string(char *s)
@@ -14,7 +14,7 @@ void rev_string(char *s)
 
 	char nully = '\0';
 
-	while (s[i] != nully)
+	while (s[i])
 	i++;
 	int z = i - 1;
 
