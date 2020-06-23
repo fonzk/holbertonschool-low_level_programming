@@ -4,22 +4,22 @@
  * rev_string - Write a function that reverses a string.
  * @s: a variable string as referencia
 	*
- * followed by a new line.
 	* Return: void
  */
 
 void rev_string(char *s)
 {
-	int i = 0;
-
+	int i = 0, z = 0;
+	char a, ze;
 	/*char nully = '\0';*/
 
 	while (*(s + i))
+	{
 		i++;
-	int z = i - 1;
+	}
+	z = i - 1;
 
 	i = 0;
-	char a, ze;
 
 	for (; z > i; z--)
 	{
