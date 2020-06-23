@@ -12,7 +12,7 @@ void _puts(char *str)
 {
 int i = 0; /* counter*/
 char nully = '\0'; /* this is the last char as null*/
-while (str[i])
+while (str[i] != nully)
 {
 	_putchar(str[i]);
 	i++;
