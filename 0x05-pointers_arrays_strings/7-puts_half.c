@@ -26,7 +26,7 @@ else
 	s = len  / 2;
 }
 i = s + 1;
-for (; i < len; i++)
+for (; i <= len; i++)
 	_putchar(str[i]);
 _putchar('\n');
 }
