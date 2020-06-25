@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
-	* string_toupper - a-zA-Z
-	* @a: char
-	*
+	* string_toupper - a-zA-Z change
+	* @a: char to upper
 	* Return: int
 	*/
 char *string_toupper(char *a)
