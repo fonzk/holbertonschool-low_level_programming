@@ -8,7 +8,7 @@
 char *cap_string(char *a)
 {
 	char sep[] = {32, 9, 10, ',', ';', '.', '!', '?', 34, 40, 41, 123, 125};
-	int i = 0, j;
+	int i = 0, j = 0;
 
 	for (; *(a + i); i++)
 	{
