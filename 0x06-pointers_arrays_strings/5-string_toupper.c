@@ -4,7 +4,6 @@
 	* string_toupper - a-zA-Z
 	* @a: char
 	*
-	*
 	* Return: int
 	*/
 char *string_toupper(char *a)
@@ -19,5 +18,4 @@ char *string_toupper(char *a)
 	}
 
 return (a);
-	}
-
+}
