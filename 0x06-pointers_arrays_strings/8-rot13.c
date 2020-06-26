@@ -9,7 +9,7 @@
 char *rot13(char *s1)
 {
 	int i, j;
-		char code[2][53] = {
+	char code[2][53] = {
 			{"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"},
 			{"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"}
 																					};
