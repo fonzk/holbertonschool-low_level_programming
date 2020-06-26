@@ -1,27 +1,61 @@
 #include "holberton.h"
-
 /**
-	* cap_string - a-zA-Z change
-	* @a: char to upper
-	* Return: int
-	*/
-char *cap_string(char *a)
+ *_strlen - reset number
+ *Description: This function return a length for some string
+ *@s: pointer char
+ *Return: int length
+ */
+
+int _strlen(char *s)
 {
-	char sep[] = {',', ';', '.', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
-	int i, j, p;
+	int len = 0;
 
-	for (i = 0 ; *(a + i); i++)
+	while (*s++)
 	{
-		for (j = 0; *(sep + j); j++)
-		{
-			p = i + 1;
+		len++;
+	}
+	return (len);
+}
+/**
+ *cap_string - changes all lowercase letters
+ *@s1: pointer parameter"
+ *Description: changes all lowercase letters
+ *Return: return pointer
+ */
+char *cap_string(char *s1)
+{
+	int i, j;
 
-			if (a[p] != '\0' && a[p] >= 'a' && a[p] <= 'z' && a[i] == sep[j])
+	for (i = 0; i < _strlen(s1) - 1; i++)
+	{
+		if (
+			s1[i] == ' ' ||
+			s1[i] == '\t' ||
+			s1[i] == '\n' ||
+			s1[i] == ',' ||
+			s1[i] == ';' ||
+			s1[i] == '.' ||
+			s1[i] == '!' ||
+			s1[i] == '?' ||
+			s1[i] == '"' ||
+			s1[i] == '(' ||
+			s1[i] == ')' ||
+			s1[i] == '{' ||
+			s1[i] == '}' ||
+			i == 0
+		)
+		{
+			for (j = 'a'; j <= 'z'; j++)
 			{
-				a[p] -= 32;
+				if (s1[i + 1] == j && i != 0)
+				{
+					s1[i + 1] = j - 32;
+				} else if (s1[i] == j && i == 0)
+				{
+					s1[i] = j - 32;
+				}
 			}
 		}
-
 	}
-	return (a);
+	return (s1);
 }
